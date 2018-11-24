@@ -4,26 +4,76 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'HGMaruGothicMPRO_22721';
+    overflow: hidden;
 }
-.dashboard_hexagon {
-    width: 84%;
-    height: 84%;
+.btn_valider {
     position: absolute;
-    top: 14%;
-    left: 14%;
+    bottom: 18px;
+    right: 36px;
+    background-color: white;
+    border: 2px solid #003181;
+    padding: 13px 0;
+    border-radius: 9px;
+    cursor: pointer;
+    text-align: center;
+    width: 250px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+.btn_valider:hover {
+    background-color: #003181;
+    color: white;
+}
+.menu_gauche {
+    position: absolute;
+    top: 0;
+    left: 1%;
+    width: 13%;
+    height: 100%;
+    background-color: #003181;
+}
+.menu_gauche ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    border: 1px solid;
+    text-align: center;
+    margin-top: 6px;
+    flex-direction: column;
+}
+.menu_gauche li {
+    display: block;
+    height: 173px;
+    background-color: white;
+    margin: 6px auto;
+    width: 183px;
+    color: #003181;
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 173px;
+}
+.dashboard_hexagon {
+    width: 79%;
+    height: 84%;
+    position: absolute;
+    top: 10%;
+    left: 19%;
+    margin: 0;
+    padding: 0;
+}
+.ligne{
+    height: 202px;
 }
 .ligne.ligne_un {
     margin-top: 38px;
 }
 .ligne.ligne_deux {
-    height: 202px;
     margin-left: 98px;
 }
-.ligne_deux .hexagon_container, .ligne_trois .hexagon_container {
+.ligne_deux .hexagon_container {
     margin-top: -38px;
+}
+.ligne_trois .hexagon_container {
+    margin-top: -72px;
 }
 .hexagon_container {
     float: left;
