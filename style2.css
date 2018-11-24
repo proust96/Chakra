@@ -82,6 +82,39 @@ img.imageAbso {
     top: 12px !important;
     left: 10px !important;
 }
+.svg_iconAbso {
+    position: absolute;
+    top: 38px;
+    left: 48px;
+    z-index: 3;
+    width: 35px;
+}
+.drop-pable .svg_iconAbso {
+    top: 21px;
+    left: 23px;
+    width: 15px;
+}
+.drop-pable .text_iconAbso {
+    width: 35px;
+    top: 38px;
+    left: 13px;
+    font-size: 0.35em;
+}
+.svg_iconAbso img {
+    width: 100%;
+}
+.text_iconAbso {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 3;
+    width: 133px;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 700;
+    color: #003181;
+    /* transition: all 0.4s ease; */
+}
 .drop-pable {
     padding: 0 2px;
     width: 137px;
