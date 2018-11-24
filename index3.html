@@ -24,7 +24,7 @@
         <div class="sep">></div>
         <div class="elem">OP X</div>
     </div>
-    <div class="bouton_plus" onclick="$('.appa2').show();$(this).hide();">+</div>
+    <div class="bouton_plus" onclick="$('.appa2').show();$(this).hide();" style="display:none;">+</div>
     <div class="main">
         <div class="ligne1">
             <div class="consigne">OBJECTIF PRINCIPAL :</div>
@@ -35,19 +35,19 @@
                 <option value="2">EXTRACTION</option>
                 <option value="3">INFILTRATION</option>
                 <option value="4">PROTECTION</option>
-                <option value="4">REPLI</option>
+                <option value="5">REPLI</option>
                 </select>
           </div>
           <div class="consigne">PLUGINS :</div>
-          <div class="custom-select" style="width:200px;">
-                <select>
+          <div class="custom-select" onclick="launchIndex()" style="width:200px;">
+                <select class="aChangeSelect">
                 <option value="0"> - </option>
                 <option value="1">PAR DEFAUT</option>
                 <option value="2">PERSONNALISE</option>
                 </select>
           </div>
         </div>
-        <div class="ligne2 appa1">
+        <div class="ligne2 appa1" style="display:none;">
                 <div class="hexagon_container">
                         <div class="hexagon">
                             <div class="hexTop"></div>
@@ -97,7 +97,7 @@
                     <option value="2">EXTRACTION</option>
                     <option value="3">INFILTRATION</option>
                     <option value="4">PROTECTION</option>
-                    <option value="4">REPLI</option>
+                    <option value="5">REPLI</option>
                 </select>
           </div>
           <div class="consigne">PLUGINS :</div>
@@ -134,15 +134,9 @@
                             <div class="hexBottom"></div>
                         </div>
                     </div>
-                    <div class="hexagon_container">
-                        <div class="hexagon">
-                            <div class="hexTop"></div>
-                            <div class="hexBottom"></div>
-                        </div>
-                    </div>
                 </div>
         </div>
     </div>
-    <div class="btn_valider">VALIDER LA SELECTION ></div>
+    <div class="btn_valider" onclick="window.location.href = 'index2.html';">VALIDER LA SELECTION ></div>
 </body>
 </html>

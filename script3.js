@@ -1,5 +1,12 @@
 $( document ).ready(function() {
 
+    if (getParameterByName('retour')){
+        $(".bouton_plus").show();
+        $(".appa1").show();
+        $(".ligne1 select").first().val("1");
+        $(".ligne1 .aChangeSelect").val("2");
+    }
+
     var x, i, j, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
@@ -73,5 +80,17 @@ function closeAllSelect(elmnt) {
     }
   }
 }
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
+function launchIndex(){
+    setTimeout(function(){
+        window.location.href = "index.html";
+    },500);
+}
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}

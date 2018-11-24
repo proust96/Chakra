@@ -135,6 +135,7 @@ img.imageAbso {
 }
 .montre {
     flex: 0 0 300px;
+    margin-left: 48px;
 }
 .plugin {
     flex: 1 0 23%;
