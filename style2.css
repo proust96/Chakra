@@ -54,13 +54,13 @@ html, body {
     position: absolute;
     top: 22%;
     left: 4%;
-    width: 92%;
+    width: 104%;
     justify-content: center;
     align-items: center;
 }
 
 .head {
-    flex: 1 0 30%;
+    flex: 0 0 580px;
     /* background-color: blue; */
     border: 5px solid #003181;
     border-radius: 15px;
