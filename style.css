@@ -1,0 +1,62 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'HGMaruGothicMPRO_22721';
+}
+.dashboard_hexagon {
+    width: 84%;
+    height: 84%;
+    position: absolute;
+    top: 14%;
+    left: 14%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+}
+.ligne.ligne_un {
+    margin-top: 38px;
+}
+.ligne.ligne_deux {
+    height: 202px;
+    margin-left: 98px;
+}
+.ligne_deux .hexagon_container, .ligne_trois .hexagon_container {
+    margin-top: -38px;
+}
+.hexagon_container {
+    float: left;
+    margin-left: 20px;
+}
+.svg_icon {
+    position: absolute;
+    top: -8px;
+    left: 46px;
+    z-index: 3;
+    width: 70px;
+}
+.svg_icon img {
+    width: 100%;
+}
+.text_icon {
+    position: absolute;
+    top: 73px;
+    left: 0;
+    z-index: 3;
+    width: 163px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #003181;
+    transition: all 0.4s ease;
+}
+.hexagon:hover .text_icon, .hexagon.selected .text_icon{
+    color: white;
+}
+@font-face {
+    font-family: 'HGMaruGothicMPRO_22721';
+    src: url('HGMaruGothicMPRO_22721.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
