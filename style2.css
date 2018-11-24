@@ -1,0 +1,163 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'HGMaruGothicMPRO_22721';
+    overflow: hidden;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+}
+.logo img {
+    width: 100%;
+}
+.fil_ariane {
+    position: absolute;
+    top: 7.5%;
+    left: 20%;
+    width: 84%;
+    font-size: 1.25em;
+}
+.fil_ariane .elem {
+    display: inline-block;
+}
+.fil_ariane .sep {
+    display: inline-block;
+    margin: 0 9px;
+}
+.btn_valider {
+    position: absolute;
+    bottom: 18px;
+    right: 36px;
+    background-color: white;
+    border: 2px solid #003181;
+    padding: 13px 0;
+    border-radius: 9px;
+    cursor: pointer;
+    text-align: center;
+    width: 250px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+.btn_valider:hover {
+    background-color: #003181;
+    color: white;
+}
+.flexDiv {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 22%;
+    left: 2%;
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    flex: 1 0 30%;
+    /* background-color: blue; */
+    border: 5px dashed red;
+    border-radius: 15px;
+    height: 427px;
+    padding: 3px;
+}
+.droppable {
+    width: 137px;
+    height: 137px;
+    /* background-color: red; */
+    display: inline-block;
+    border: 2px dashed gray;
+}
+.drop-pable {
+    padding: 0 2px;
+    width: 137px;
+    height: 137px;
+    /* background-color: red; */
+    display: inline-block;
+}
+.drop-pable .droppable {
+    width: 61px;
+    height: 64px;
+    /* background-color: red; */
+    display: inline-block;
+}
+.watch {
+    flex: 0 0 300px;
+    height: 300px;
+    border-radius: 300px;
+    border: 5px dashed red;
+    margin: 0 40px;
+}
+
+.hexa {
+    flex: 1 0 23%;
+    border: 5px solid blue;
+    height: 400px;
+}
+.titres {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 84%;
+    left: 2%;
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    color: #003181;
+}
+.afficheur {
+    flex: 1 0 30%;
+}
+.montre {
+    flex: 0 0 300px;
+}
+.plugin {
+    flex: 1 0 23%;
+}
+.drop_watch {
+    margin-top: 82px;
+    margin-left: 80px;
+}
+.hexagon_container {
+    float: left;
+    margin-left: 20px;
+}
+.svg_icon {
+    position: absolute;
+    top: -8px;
+    left: 46px;
+    z-index: 3;
+    width: 70px;
+}
+.svg_icon img {
+    width: 100%;
+}
+.text_icon {
+    position: absolute;
+    top: 73px;
+    left: 0;
+    z-index: 3;
+    width: 163px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #003181;
+    transition: all 0.4s ease;
+}
+.hexagon:hover .text_icon, .hexagon.selected .text_icon{
+    color: white;
+}
+@font-face {
+    font-family: 'HGMaruGothicMPRO_22721';
+    src: url('HGMaruGothicMPRO_22721.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
