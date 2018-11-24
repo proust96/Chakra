@@ -58,7 +58,7 @@ html, body {
 .svg_icon img {
     width: 100%;
 }
-.text_icon {
+.text_icon{
     position: absolute;
     top: 73px;
     left: 0;
@@ -69,9 +69,6 @@ html, body {
     font-weight: 700;
     color: #003181;
     transition: all 0.4s ease;
-}
-.hexagon:hover .text_icon, .hexagon.selected .text_icon{
-    color: white;
 }
 .main {
     position: absolute;
@@ -107,7 +104,6 @@ html, body {
 }
 .hexagon:hover{
     background-color: white !important;
-    cursor: pointer !important;
 }
 .bouton_plus {
     position: absolute;

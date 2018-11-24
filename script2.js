@@ -3,7 +3,16 @@ $( document ).ready(function() {
         $(this).toggleClass("selected");
     });
 
+    $(".hexagon").hover(function(){
+        $(this).children('.svg_icon').children("img").attr("src",$(this).children('.svg_icon').children("img").attr("src").replace("bleu.png", "blanc.png"));
+    }, function(){
+        if (!$(this).hasClass("selected")){
+        $(this).children('.svg_icon').children("img").attr("src",$(this).children('.svg_icon').children("img").attr("src").replace("blanc.png", "bleu.png"));
+        }
+    });
+
     $( ".hexagon_container" ).draggable({ revert: "invalid",stop: function() {
+        $(this).children(".hexagon").children('.svg_icon').children("img").attr("src",$(this).children(".hexagon").children('.svg_icon').children("img").attr("src").replace("blanc.png", "bleu.png"));
         let icon = $(this).children(".hexagon").children(".svg_icon").removeClass("svg_icon").addClass("svg_iconAbso");
         let text = $(this).children(".hexagon").children(".text_icon").removeClass("text_icon").addClass("text_iconAbso");;
         icon.appendTo($(this));

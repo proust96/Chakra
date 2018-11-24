@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    let soldat=[1,2,3,4,5,7,9,12,13,14,15];
+    let soldat=[1,2,3,5,7,9,12,13,14,15];
     let sniper=[0,2,3,6,7,8,9,13,14,15];
 
     if (getParameterByName("sniper")){
