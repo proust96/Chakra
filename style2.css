@@ -10,7 +10,7 @@ html, body {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 60px;
+    width: 160px;
     height: 60px;
 }
 .logo img {
@@ -53,8 +53,8 @@ html, body {
     flex-direction: row;
     position: absolute;
     top: 22%;
-    left: 2%;
-    width: 96%;
+    left: 4%;
+    width: 92%;
     justify-content: center;
     align-items: center;
 }
@@ -62,7 +62,7 @@ html, body {
 .head {
     flex: 1 0 30%;
     /* background-color: blue; */
-    border: 5px dashed red;
+    border: 5px solid #003181;
     border-radius: 15px;
     height: 427px;
     padding: 3px;
@@ -107,26 +107,27 @@ img.imageAbso {
     flex: 0 0 300px;
     height: 300px;
     border-radius: 300px;
-    border: 5px dashed red;
+    border: 5px solid #003181;
     margin: 0 40px;
 }
 
 .hexa {
-    flex: 1 0 23%;
-    border: 5px solid blue;
+    flex: 1 0 18%;
+    border: 5px dashed #003181;
     height: 400px;
 }
 .titres {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 84%;
+    top: 85%;
     left: 2%;
     width: 96%;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1.2em;
+    font-weight: 700;
     color: #003181;
 }
 .afficheur {
