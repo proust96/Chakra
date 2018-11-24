@@ -65,7 +65,9 @@ html, body {
     flex-direction: column;
 }
 .menu_gauche li {
-    display: block;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
     height: 173px;
     background-color: white;
     margin: 6px auto;
@@ -73,7 +75,6 @@ html, body {
     color: #003181;
     font-weight: 700;
     font-size: 1.7em;
-    line-height: 173px;
     cursor: pointer;
 }
 .menu_gauche li.sel, .menu_gauche li.sel:hover {
@@ -129,7 +130,7 @@ html, body {
     z-index: 3;
     width: 163px;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 700;
     color: #003181;
     transition: all 0.4s ease;
